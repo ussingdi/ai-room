@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div>Bismillahirrahmanirrahim</div>
-      <Button>Uvais</Button>
+      <Button>Uvais JR</Button>
     </>
   );
 }
