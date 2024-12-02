@@ -6,7 +6,7 @@ import { UserDetailContext } from "./_context/UserDetailContext";
 
 function Provider({ children }) {
   const { user } = useUser();
-  const [UserDetail, setUserDetail] = useState([]);
+  const [userDetail, setUserDetail] = useState([]);
   useEffect(() => {
     user && verifyUser();
   }, [user]);
@@ -22,7 +22,7 @@ function Provider({ children }) {
     }
   };
   return (
-    <UserDetailContext.Provider value={{ UserDetail, setUserDetail }}>
+    <UserDetailContext.Provider value={{ userDetail, setUserDetail }}>
       <div>{children}</div>;
     </UserDetailContext.Provider>
   );
